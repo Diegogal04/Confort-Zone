@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/faviconcz.jpg"  type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="pure.css"> 
+    <link rel="stylesheet" href="style.css">
+    <title>BanCreeps</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="images/cz.png" alt="logo" class="logo-img"></a>
+        <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+        <ul class="nav-bar" id="nav-list">
+            <li>HOME</li>
+            <li>MAKE POST</li>
+            <li>CONTACT</li>
+        </ul>
+    </nav>
+<section class="home-page">
+    <div class="intro-me">
+        <h1 class="title-intro">Expose Creeps Online</h1>
+        <p class="p-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, illo temporibus nobis voluptate cumque doloribus delectus consequuntur</p>
+        <div class="line-br"></div>
+        <button class="learn-btn">Learn More</button>
+    </div>
+    <div class="space-div"></div>
+    <div class="work-img">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthumbs.gfycat.com%2FMeatyGoodGerbil-size_restricted.gif&f=1&nofb=1" alt="" id="creep">
+    </div>
+</section>
+<section class="contact">
+    <h2 class="contact-title">Tell us your Story!</h2>
+    <aside class="contact-info">
+        <p>
+            We would <em>love</em> to hear from you!
+        </p>
+        <p>
+            Please use the <b><em>Contact Form</em></b>
+            to send us your Story.
+        </p>
+    </aside>
+
+   
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbzHoxb9qgm8F3Q08CZDPVbS5NrC2KH_2WdnThKa/exec">
+    <!-- change the form action to your script url -->
+
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name">Name: </label>
+        <input id="name" name="name" placeholder="What your Mom calls you" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" rows="10"
+        placeholder="Tell us what's on your mind..."></textarea>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email"><em>Your</em> Email Address:</label>
+        <input id="email" name="email" type="email" value=""
+        required placeholder="your.name@email.com"/>
+        <span class="email-invalid" style="display:none">
+          Must be a valid email address</span>
+      </fieldset>
+
+
+      <button >
+        Send</button>
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks</em> for contacting us!
+        We will get back to you soon!</h2>
+    </div>
+
+  </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="form-submission-handler.js"></script>
+<!-- END -->
+<script src="main.js"></script>
+
+</body>
+</html>     
+
+
+
